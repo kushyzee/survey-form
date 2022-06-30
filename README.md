@@ -1,4 +1,4 @@
 # Survey form
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/Kushyzee/pen/vYREWOb](https://codepen.io/Kushyzee/pen/vYREWOb).
+This is my solution to the Survery form project by freecodecamp, originally created on [codepen](https://codepen.io/Kushyzee/pen/vYREWOb)
 
