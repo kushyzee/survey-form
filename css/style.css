@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0
+}
+
+html {
+  font-size: 10px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(26, 3, 29, 1);
+  background-image: linear-gradient(112deg, 
+    rgba(99, 14, 116, 0.5) 30%, rgba(239, 116, 92, 0.5)
+    ),
+url(../images/bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} 
+
+body {
+  font-size: 1.6rem;
+  color: #ddd;
+  padding: 1rem;
+  font-family: 'Nunito Sans', sans-serif;
+  min-width: 340px;
+}
+
+main {
+  width: 100%;
+  margin: 3rem auto;
+}
+
+@media (min-width: 550px) {
+  main {
+    max-width: 500px;
+  }
+  
+  #title {
+  Font-size: 4rem;
+    line-height: 1.4
+}
+}
+
+@media (min-width: 750px) {
+  main {
+    max-width: 700px;
+  }
+  
+  #title {
+  Font-size: 4.5rem;
+  }
+}
+
+#title {
+  Font-size: 3rem;
+  text-align: center;
+  margin: 1.5rem 0 1rem;
+  font-weight: 800;
+  font-family: 'Lora', serif;
+  line-height: 1.2
+}
+  
+#description {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.65rem;
+}
+
+#survey-form {
+  background-color: rgba(26, 3, 29, 0.75);
+  padding: 4rem;
+  margin: 2.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.form-format {
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin: 0 0 1rem;
+}
+
+input {
+  margin: 0 0 3rem;
+}
+
+.input-format {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0.5rem;
+  margin: 0 0 3rem;
+  border-radius: 0.5rem;
+  border-left: 5px green ridge;
+  transition: border-color 2s linear;
+}
+
+.input-format:focus {
+  border-color: green;
+  outline: 0
+}
+
+.radio-check {
+  display: inline-block;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  margin: 0 1rem 0 0;
+}
+
+.form-format>p {
+  margin: 1.5rem 0 1.5rem; 
+}
+
+#comments {
+  margin: 1rem 0 1.5rem;
+  width: 100%;
+  min-height: 12rem;
+  resize: vertical;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+
+#comments:focus {
+  border-color: green;
+  outline: 0;
+}
+
+#comments-p {
+  margin-top: 2.5rem; 
+}
+
+span {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+#submit {
+  background: green;
+  width: 100%;
+  padding: 0.5rem;
+  color: inherit;
+  font-size: 1.7rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+#submit:hover {
+  transform: scale(0.97);
+  opacity: 0.8;
+}
